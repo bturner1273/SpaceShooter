@@ -12,11 +12,6 @@ public class HealthComponent : MonoBehaviour
         health = max_health;
     }
 
-    public void SetHealth (float init_health)
-    {
-        health = init_health;
-    }
-
     public float GetHealth ()
     {
         return health;

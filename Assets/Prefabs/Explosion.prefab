@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 45223528204384154}
   m_Layer: 0
   m_Name: Explosion
-  m_TagString: Untagged
+  m_TagString: Explosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4711,4 +4711,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b95e39ea925c8b04d889318224890ee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 2
+  lifetime: 0.75

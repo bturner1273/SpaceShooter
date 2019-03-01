@@ -16,12 +16,15 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction_timer -= Time.deltaTime;
-        if (direction_timer < 0.0f)
+        if (GameManager.GetGameActive())
         {
-            speed *= -1;
-            direction_timer = direction_switch_delay;
+            direction_timer -= Time.deltaTime;
+            if (direction_timer < 0.0f)
+            {
+                speed *= -1;
+                direction_timer = direction_switch_delay;
+            }
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 }

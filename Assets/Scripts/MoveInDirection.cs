@@ -9,6 +9,9 @@ public class MoveInDirection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(velocity * Time.deltaTime);
+        if (GameManager.GetGameActive())
+        {
+            transform.Translate(velocity * Time.deltaTime);
+        }
     }
 }
